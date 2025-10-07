@@ -1,0 +1,77 @@
+---
+import Count from "../Fragments/Count.astro";
+---
+
+
+<section>
+    <h3>Despegamos en:</h3>
+
+    <Count /> 
+
+    <div class="date__text">
+        <div class="img">
+            <img src="/src/assets/Date/4.png" alt="Cohete">
+        </div>
+        <div class="text">
+            <h5 style="margin: 0;">Fecha del despegue</h5>
+            <small style="margin: 0;">Viernes</small>
+            <h4 style="margin: 0;">9 de Enero</h4>
+            <p style="margin: 0;">10:30 a.m</p>
+        </div>
+    </div>
+</section>
+
+
+<style>
+    section {
+        width: 100%;
+        padding: 20px 0 0 0;
+    }
+
+    section h3 {
+        font-size: 25px;
+        color: #e681dc;
+        text-align: center;
+        margin: 0;
+    }
+
+    section .date__text {
+        width: 100%;
+        margin-top: 20px;
+        display: flex;
+    }
+
+    section .date__text .img img {
+        width: 100px;
+    }
+
+    section .date__text .text {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 30px;
+    }
+
+    section .date__text .text h5 {
+        font-size: 22px;
+        color: #e681dc;
+        margin-bottom: 10px!important;
+    }
+
+    section .date__text .text small {
+        font-size: 15px;
+        letter-spacing: 4px;
+        color: #092240;
+    }
+    
+    section .date__text .text h4 {
+        font-size: 30px;
+        color: #092240;
+    }
+
+    section .date__text .text p {
+        font-size: 18px;
+        color: #092240;
+    }
+</style>

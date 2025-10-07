@@ -1,0 +1,144 @@
+---
+
+---
+
+
+<section>
+    <div class="content__watts">
+        <h5>Invitado del novio</h5>
+        <a href="https://api.whatsapp.com/send?phone=+525583692678&text=Confirmo%20mi%20asistencia" target="_blank">
+            <img src="/src/assets/Contact/11.png" alt="Whatts">
+        </a>
+        <p>Confirmar</p>
+    </div>
+    <div class="content__img">
+        <div class="cape__watts" />
+    </div>
+    <div class="content__watts">
+        <h5>Invitado de la novia</h5>
+        <a href="https://api.whatsapp.com/send?phone=+525531337859&text=Confirmo%20mi%20asistencia" target="_blank">
+            <img src="/src/assets/Contact/11.png" alt="Whatts">
+        </a>
+        <p>Confirmar</p>
+    </div>
+
+    <img class="nebu_1" src="/src/assets/Header/2.png" alt="Nebulosa">
+    <img class="nebu_2" src="/src/assets/Header/2.png" alt="Nebulosa">
+    <img class="star_1" src="/src/assets/Header/3.png" alt="Estrellas">
+    <img class="star_2" src="/src/assets/Header/3.png" alt="Estrellas">
+
+    <p>Favor de confirmar antes del 29 de noviembre</p>
+</section>
+
+
+<style>
+    section {
+        position: relative;
+        width: 100%;
+        height: 200px;
+        display: flex;
+        background-color: #092240;
+        overflow: hidden;
+    }
+
+    section .content__watts {
+        flex: 1;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        z-index: 10;
+    }
+    
+    section .content__watts h5 {
+        font-size: 14px;
+        text-align: center;
+        color: #fff;
+        margin: 0;
+    }
+    
+    section .content__watts a {
+        width: 60px;
+        text-decoration: none;
+    }
+    
+    section .content__watts a img {
+        width: 100%;
+    }
+    
+    section .content__watts p {
+        font-size: 14px;
+        color: #fff;
+        text-align: center;
+        margin: 0;
+    }
+    
+    section .content__img {
+        position: relative;
+        width: 32%;
+        height: 100%;
+        background-image: url('/src/assets/Contact/foto5.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: 10;
+    }
+
+    section .content__img .cape__watts {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-color: rgba(9, 34, 64, 0.2);
+    }
+
+    section .nebu_1 {
+        position: absolute;
+        top: -70px;
+        left: -40px;
+        width: 150px;
+        transform: rotate(45deg);
+        z-index: 1;
+    }
+
+    section .nebu_2 {
+        position: absolute;
+        bottom: -65px;
+        right: -40px;
+        width: 150px;
+        transform: rotate(25deg);
+        z-index: 1;
+    }
+    
+    section .star_1 {
+        position: absolute;
+        bottom: -60px;
+        left: -90px;
+        width: 200px;
+        transform: rotate(-180deg);
+        z-index: 1;
+    }
+    
+    section .star_2 {
+        position: absolute;
+        top: -40px;
+        right: 0;
+        width: 200px;
+        transform: rotate(-180deg);
+        z-index: 1;
+    }
+
+    section > p {
+        position: absolute;
+        width: 100%;
+        bottom: 10px;
+        left: 50%;
+        text-align: center;
+        transform: translateX(-50%);
+        color: #fff;
+        margin: 0;
+        font-size: 12px;
+        z-index: 100;
+    }
+</style>

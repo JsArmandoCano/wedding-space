@@ -1,0 +1,156 @@
+---
+
+---
+
+
+<section>
+    <h3>Lugar</h3>
+    <div class="place__text">
+        <img src="/src/assets/Place/5.png" alt="Planeta">
+        <a href="https://maps.app.goo.gl/YwkkTxqxsaiY8Dg7A" target="_blank">Virginia 125, Col. Nativitas, Benito Juárez</a>
+    </div>
+
+    <h4>COMUNICADO DE ALTA IMPORTANCIA:</h4>
+    <div class="place__communication">
+        <img src="/src/assets/Place/6.png" alt="Comunicado">
+        <div class="content">
+            <p>Después de la ceremonia,</p>
+            <p>NO habrá recepción</p>
+        </div>
+    </div>
+
+    <img class="nebu1" src="/src/assets/Header/2.png" alt="Nebulosa">
+    <img class="nebu2" src="/src/assets/Header/2.png" alt="Nebulosa">
+    <img class="star1" src="/src/assets/Header/3.png" alt="Estrellas">
+    <img class="star2" src="/src/assets/Header/3.png" alt="Estrellas">
+</section>
+
+
+<style>
+    section {
+        position: relative;
+        width: 100%;
+        padding: 30px 0;
+        background-color: #092240;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    section h3 {
+        font-size: 28px;
+        text-align: center;
+        color: #8acbdf;
+        margin: 0;
+        margin-bottom: 30px;
+        z-index: 10;
+    }
+
+    section .place__text {
+        position: relative;
+        width: 70%;
+        height: 70px;
+        background-color: rgba(255, 255, 255, 0.6);
+        border-radius: 10px;
+        margin-left: 25px;
+        display: flex;
+        align-items: center;
+        padding: 0 10px;
+        z-index: 10;
+    }
+
+    section .place__text img {
+        position: absolute;
+        width: 140px;
+        top: 58%;
+        left: -50px;
+        transform: translateY(-58%);
+    }
+
+    section .place__text a {
+        font-size: 18px;
+        color: #fff;
+        padding-left: 75px;
+    }
+
+    section h4 {
+        width: 80%;
+        font-size: 22px;
+        text-align: center;
+        color: #8acbdf;
+        margin: 50px 0 0 0;
+        z-index: 10;
+    }
+
+    section .place__communication {
+        position: relative;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding-left: 30px;
+        z-index: 10;
+        margin-top: -10px;
+    }
+
+    section .place__communication img {
+        width: 280px;
+    }
+
+    section .place__communication .content {
+        position: absolute;
+        top: 40px;
+        left: 47%;
+        transform: translateX(-47%);
+        width: 190px;
+        height: 150px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+    }
+
+    section .place__communication .content p {
+        font-size: 20px;
+        color: #092240;
+        text-align: center;
+        margin: 0;
+    }
+
+    section .nebu1 {
+        position: absolute;
+        width: 200px;
+        top: -20px;
+        left: -70px;
+        z-index: 1;
+        transform: rotate(-25deg);
+    }
+
+    section .nebu2 {
+        position: absolute;
+        width: 200px;
+        bottom: -25px;
+        right: -85px;
+        z-index: 1;
+        transform: rotate(-30deg);
+    }
+
+    section .star1 {
+        position: absolute;
+        width: 220px;
+        top: 0;
+        right: -40px;
+        transform: rotateX(180deg) rotate(-90deg);
+        z-index: 1;
+    }
+
+    section .star2 {
+        position: absolute;
+        width: 220px;
+        bottom: 0;
+        left: -40px;
+        transform: rotate(-90deg);
+        z-index: 1;
+    }
+</style>

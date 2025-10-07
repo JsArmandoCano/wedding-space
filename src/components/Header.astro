@@ -1,0 +1,138 @@
+---
+
+---
+
+
+<section>
+    <img class="nebu__1" src="/src/assets/Header/2.png" alt="Nebulosa">
+    <img class="nebu__2" src="/src/assets/Header/2.png" alt="Nebulosa">
+    <img class="nebu__3" src="/src/assets/Header/1-2.png" alt="Nebulosa">
+    <img class="star__1" src="/src/assets/Header/3.png" alt="Estrellas">
+    <img class="star__2" src="/src/assets/Header/3.png" alt="Estrellas">
+    <img class="astronauts" src="/src/assets/Header/1.png" alt="Astronauts">
+
+    <div class="content__names">
+        <p>Nuestra boda</p>
+        <div class="names">
+            <div>
+                <h2>Daniel</h2>
+            </div>
+            <div>
+                <h2>Fernanda</h2>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<style>
+    section {
+        position: relative;
+        width: 100%;
+        height: 350px;
+        background-color: #092240;
+        overflow: hidden;
+        z-index: 1;
+    }
+
+    section .nebu__1 {
+        position: absolute;
+        width: 200px;
+        top: -40px;
+        left: -58px;
+        transform: rotate(-30deg);
+        z-index: 1;
+    }
+    
+    section .nebu__2 {
+        position: absolute;
+        width: 200px;
+        bottom: -46px;
+        right: -36px;
+        transform: rotate(-10deg);
+        z-index: 1;
+    }
+
+    section .nebu__3 {
+        position: absolute;
+        width: 280px;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        opacity: 0.6;
+        z-index: 1;
+    }
+
+    section .star__1 {
+        position: absolute;
+        width: 140px;
+        top: -29px;
+        right: 0;
+        z-index: 1;
+    }
+
+    section .star__2 {
+        position: absolute;
+        width: 220px;
+        bottom: -44px;
+        left: 0;
+        z-index: 1;
+    }
+
+    section .astronauts {
+        position: absolute;
+        width: 170px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+    }
+
+    section .content__names {
+        position: absolute;
+        width: 100%;
+        height: 200px;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 30px;
+        z-index: 3;
+    }
+
+    section .content__names p {
+        font-size: 20px;
+        color: white;
+        margin: 0;
+        letter-spacing: -1px;
+    }
+
+    section .content__names .names {
+        width: 100%;
+        height: 170px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    section .content__names .names div {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+    }
+
+    section .content__names .names div:nth-child(1) {
+        margin-right: 115px;
+    }
+
+    section .content__names .names h2 {
+        font-size: 24px;
+        color: white;
+        margin: 0;
+        font-family: "Pacifico", cursive;
+        font-weight: 400;
+        font-style: normal;
+    }
+</style>

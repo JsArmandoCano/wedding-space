@@ -1,0 +1,117 @@
+---
+
+---
+
+
+<section>
+    <h3>Código de vestimenta</h3>
+
+    <div class="content__outfit">
+        <div class="texts" style="text-align: right;">
+            <h5>Hombres</h5>
+            <p>Formal</p>
+            <p>Traje, pantalón de vestir con camisa, saco o blazer, corbata.</p>
+            <p>NO color azul marino.</p>
+        </div>
+        <div class="img">
+            <img src="/src/assets/Outfit/9.png" alt="Cohete">
+        </div>
+        <div class="texts">
+            <h5>Mujeres</h5>
+            <p>Formal</p>
+            <p>Vestido, traje sastre, mono, falda, blusa, tacones o flats.</p>
+            <p>NO color blanco o morado.</p>
+        </div>
+    </div>
+
+    <img class="nebuUno" src="/src/assets/Header/2.png" alt="Nebulosa">
+    <img class="nebuDos" src="/src/assets/Header/2.png" alt="Nebulosa">
+    <img class="starUno" src="/src/assets/Header/3.png" alt="Estrellas">
+    <img class="starDos" src="/src/assets/Header/3.png" alt="Estrellas">
+</section>
+
+
+<style>
+    section {
+        position: relative;
+        width: 100%;
+        background-color: #092240;
+        padding: 40px 0;
+        overflow: hidden;
+    }
+
+    section h3 {
+        font-size: 25px;
+        color: #e681dc;
+        text-align: center;
+        margin: 0;
+    }
+
+    section .content__outfit {
+        width: 100%;
+        margin-top: 15px;
+        display: flex;
+        z-index: 10;
+    }
+
+    section .content__outfit .img {
+        width: 30%;
+    }
+    
+    section .content__outfit .img img {
+        width: 100%;
+    }
+
+    section .content__outfit .texts {
+        flex: 1;
+        color: #fff;
+        padding-right: 5px;
+    }
+
+    section .content__outfit .texts h5 {
+        font-size: 16px;
+        margin: 0;
+        margin-bottom: 7px;
+    }
+
+    section .content__outfit .texts p {
+        font-size: 14px;
+        margin: 0;
+    }
+
+    section .nebuUno {
+        position: absolute;
+        width: 150px;
+        top: -55px;
+        left: -50px;
+        z-index: 1;
+        transform: rotate(-20deg);
+    }
+
+    section .nebuDos {
+        position: absolute;
+        width: 150px;
+        top: -55px;
+        right: -62px;
+        z-index: 1;
+        transform: rotate(5deg);
+    }
+
+    section .starUno {
+        position: absolute;
+        width: 50%;
+        bottom: -45px;
+        left: 0;
+        opacity: 0.5;
+        z-index: 1;
+    }
+    
+    section .starDos {
+        position: absolute;
+        width: 50%;
+        bottom: -45px;
+        right: 0;
+        opacity: 0.5;
+        z-index: 1;
+    }
+</style>
