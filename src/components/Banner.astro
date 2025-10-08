@@ -18,7 +18,7 @@
     <img class="stars2" src="/assets/Header/3.png" alt="Estrella" />
     
     <div class="cape">
-        <h5>Queremos que formes parte del inicio de este gran viaje.</h5>
+        <h5 class="text__animate1">Queremos que formes parte del inicio de este gran viaje.</h5>
     </div>
 </section>
 
@@ -103,3 +103,25 @@
         }
     }
 </style>
+
+
+<script>
+    import gsap from 'gsap';
+    import { ScrollTrigger } from 'gsap/ScrollTrigger';
+    gsap.registerPlugin(ScrollTrigger);
+
+    gsap.fromTo('.text__animate1',
+        { clipPath: 'inset(0 100% 0 0)', opacity: 0 },
+        {
+            clipPath: 'inset(0 0% 0 0)',
+            opacity: 1,
+            duration: 1.2,
+            ease: 'power2.out',
+            scrollTrigger: {
+                trigger: '.text__animate1',
+                start: 'top 80%',
+                toggleActions: 'play none none none',
+            }
+        }
+    );
+</script>

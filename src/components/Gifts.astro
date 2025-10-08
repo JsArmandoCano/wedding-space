@@ -13,7 +13,7 @@
         <div class="info">
             <h5>Mesa de regalos:</h5>
             <h6>Liverpool 51595952</h6>
-            <a href="https://mesaderegalos.liverpool.com.mx/milistaderegalos/51595952" target="_blank">
+            <a class="text__animate2--fade" href="https://mesaderegalos.liverpool.com.mx/milistaderegalos/51595952" target="_blank">
                 <img src="/assets/Gifts/8.png" alt="Click Here">
             </a>
         </div>
@@ -132,3 +132,23 @@
         }
     }
 </style>
+
+
+<script>
+    import gsap from 'gsap';
+    import { ScrollTrigger } from 'gsap/ScrollTrigger';
+    gsap.registerPlugin(ScrollTrigger);
+
+    gsap.from('.text__animate2--fade', {
+        scrollTrigger: {
+            trigger: '.text__animate2--fade',
+            start: 'top 80%',
+            toggleActions: 'play none none none'
+        },
+        opacity: 0,
+        y: 50,
+        duration: 1,
+        ease: 'power2.out',
+        stagger: 0.2
+    });
+</script>

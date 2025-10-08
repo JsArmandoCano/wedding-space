@@ -8,7 +8,7 @@
     <img class="rocket" src="/assets/Banner2/8-5.png" alt="Cohete">
 
     <div class="cape__banner2">
-        <p>¡Esperamos contar con tu valiosa presencia!</p>
+        <p class="text__animate6">¡Esperamos contar con tu valiosa presencia!</p>
     </div>
 </section>
 
@@ -84,3 +84,25 @@
         } 
     }
 </style>
+
+
+<script>
+    import gsap from 'gsap';
+    import { ScrollTrigger } from 'gsap/ScrollTrigger';
+    gsap.registerPlugin(ScrollTrigger);
+
+    gsap.fromTo('.text__animate6',
+        { clipPath: 'inset(0 100% 0 0)', opacity: 0 },
+        {
+            clipPath: 'inset(0 0% 0 0)',
+            opacity: 1,
+            duration: 1.2,
+            ease: 'power2.out',
+            scrollTrigger: {
+                trigger: '.text__animate6',
+                start: 'top 80%',
+                toggleActions: 'play none none none',
+            }
+        }
+    );
+</script>

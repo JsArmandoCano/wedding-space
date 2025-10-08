@@ -4,7 +4,7 @@ import Count from "../Fragments/Count.astro";
 
 
 <section>
-    <h3>Despegamos en:</h3>
+    <h3 class="text__animate1--fade">Despegamos en:</h3>
 
     <Count /> 
 
@@ -13,7 +13,7 @@ import Count from "../Fragments/Count.astro";
             <div id="gift-1"></div>
         </div>
         <div class="text">
-            <h5 style="margin: 0;">Fecha del despegue</h5>
+            <h5 style="margin: 0;" class="text__animate1--fade">Fecha del despegue</h5>
             <small style="margin: 0;">Viernes</small>
             <h4 style="margin: 0;">9 de Enero</h4>
             <p style="margin: 0;">10:30 a.m</p>
@@ -169,4 +169,21 @@ import Count from "../Fragments/Count.astro";
             path: '/assets/Date/Rocket.json',
         });
     }
+
+    import gsap from 'gsap';
+    import { ScrollTrigger } from 'gsap/ScrollTrigger';
+    gsap.registerPlugin(ScrollTrigger);
+
+    gsap.from('.text__animate1--fade', {
+        scrollTrigger: {
+            trigger: '.text__animate1--fade',
+            start: 'top 70%',
+            toggleActions: 'play none none none'
+        },
+        opacity: 0,
+        y: 50,
+        duration: 1,
+        ease: 'power2.out',
+        stagger: 0.2
+    });
 </script>

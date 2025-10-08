@@ -20,10 +20,10 @@
         </div>
     </div>
 
-    <img class="nebu1" src="/assets/Header/2.png" alt="Nebulosa">
-    <img class="nebu2" src="/assets/Header/2.png" alt="Nebulosa">
-    <img class="star1" src="/assets/Header/3.png" alt="Estrellas">
-    <img class="star2" src="/assets/Header/3.png" alt="Estrellas">
+    <img class="nebu1 img__animate1--fade" src="/assets/Header/2.png" alt="Nebulosa">
+    <img class="nebu2 img__animate2--fade" src="/assets/Header/2.png" alt="Nebulosa">
+    <img class="star1 img__animate1--fade" src="/assets/Header/3.png" alt="Estrellas">
+    <img class="star2 img__animate2--fade" src="/assets/Header/3.png" alt="Estrellas">
 </section>
 
 
@@ -332,4 +332,34 @@
             path: '/assets/Place/Astronaut.json',
         });
     }
+
+    import gsap from 'gsap';
+    import { ScrollTrigger } from 'gsap/ScrollTrigger';
+    gsap.registerPlugin(ScrollTrigger);
+
+    gsap.from('.img__animate1--fade', {
+        scrollTrigger: {
+            trigger: '.img__animate1--fade',
+            start: 'top 60%',
+            toggleActions: 'play none none none'
+        },
+        opacity: 0,
+        x: -100,
+        duration: 1,
+        ease: 'power2.out',
+        stagger: 0.2
+    });
+
+    gsap.from('.img__animate2--fade', {
+        scrollTrigger: {
+            trigger: '.img__animate2--fade',
+            start: 'top 60%',
+            toggleActions: 'play none none none'
+        },
+        opacity: 0,
+        x: 100,
+        duration: 1,
+        ease: 'power2.out',
+        stagger: 0.2
+    });
 </script>

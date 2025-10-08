@@ -7,16 +7,16 @@
     <h3>Código de vestimenta</h3>
 
     <div class="content__outfit">
-        <div class="texts" style="text-align: right;">
+        <div class="texts text__animate4--fade" style="text-align: right;">
             <h5>Hombres</h5>
             <p>Formal</p>
             <p>Traje, pantalón de vestir con camisa, saco o blazer, corbata.</p>
             <p>NO color azul marino.</p>
         </div>
         <div class="img">
-            <img src="/assets/Outfit/9.png" alt="Cohete">
+            <img class="img__zoomin--fade" src="/assets/Outfit/9.png" alt="Cohete">
         </div>
-        <div class="texts">
+        <div class="texts text__animate5--fade">
             <h5>Mujeres</h5>
             <p>Formal</p>
             <p>Vestido, traje sastre, mono, falda, blusa, tacones o flats.</p>
@@ -60,6 +60,8 @@
     
     section .content__outfit .img img {
         width: 100%;
+        transform-origin: center center;
+        will-change: transform, opacity;
     }
 
     section .content__outfit .texts {
@@ -191,3 +193,48 @@
         }
     }
 </style>
+
+
+<script>
+    import gsap from 'gsap';
+    import { ScrollTrigger } from 'gsap/ScrollTrigger';
+    gsap.registerPlugin(ScrollTrigger);
+
+    gsap.from('.img__zoomin--fade', {
+        scrollTrigger: {
+            trigger: '.img__zoomin--fade',
+            start: 'top 70%',
+            toggleActions: 'play none none none'
+        },
+        opacity: 0,
+        scale: 0.8,
+        duration: 0.9,
+        ease: 'power2.out'
+    });
+
+    gsap.from('.text__animate4--fade', {
+        scrollTrigger: {
+            trigger: '.text__animate4--fade',
+            start: 'top 60%',
+            toggleActions: 'play none none none'
+        },
+        opacity: 0,
+        x: -100,
+        duration: 1,
+        ease: 'power2.out',
+        stagger: 0.2
+    });
+
+    gsap.from('.text__animate5--fade', {
+        scrollTrigger: {
+            trigger: '.text__animate5--fade',
+            start: 'top 60%',
+            toggleActions: 'play none none none'
+        },
+        opacity: 0,
+        x: 100,
+        duration: 1,
+        ease: 'power2.out',
+        stagger: 0.2
+    });
+</script>
