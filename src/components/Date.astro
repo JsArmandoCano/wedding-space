@@ -10,7 +10,7 @@ import Count from "../Fragments/Count.astro";
 
     <div class="date__text">
         <div class="img">
-            <img src="/assets/Date/4.png" alt="Cohete">
+            <div id="gift-1"></div>
         </div>
         <div class="text">
             <h5 style="margin: 0;">Fecha del despegue</h5>
@@ -25,7 +25,8 @@ import Count from "../Fragments/Count.astro";
 <style>
     section {
         width: 100%;
-        padding: 20px 0 0 0;
+        padding: 20px 0 20px 0;
+        overflow: hidden;
     }
 
     section h3 {
@@ -41,8 +42,18 @@ import Count from "../Fragments/Count.astro";
         display: flex;
     }
 
-    section .date__text .img img {
+    section .date__text .img {
+        position: relative;
         width: 100px;
+    }
+
+    section .date__text .img div {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        bottom: 0px;
+        left: 0;
+        transform: rotate(45deg) scale(1.2);
     }
 
     section .date__text .text {
@@ -75,3 +86,18 @@ import Count from "../Fragments/Count.astro";
         color: #092240;
     }
 </style>
+
+<script>
+    import Lottie from "lottie-web";
+
+    const container1 = document.getElementById('gift-1');
+    if (Lottie && container1) {
+        Lottie.loadAnimation({
+            container: container1,
+            renderer: 'svg',
+            loop: true,
+            autoplay: true,
+            path: '/assets/Date/Rocket.json',
+        });
+    }
+</script>

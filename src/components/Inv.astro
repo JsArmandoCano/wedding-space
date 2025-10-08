@@ -6,7 +6,7 @@
 <section>
     <div class="content__inv">
         <div class="img">
-            <img src="/assets/Inv/10.png" alt="Astronauta con globos" />
+            <div id="gift-4"></div>
         </div>
         <div class="invs">
             <h4>Tripulantes:</h4>
@@ -28,6 +28,7 @@
         padding: 20px 0;
         display: flex;
         justify-content: center;
+        overflow: hidden;
     }
 
     section .content__inv {
@@ -36,17 +37,21 @@
     }
 
     section .content__inv .img {
-        width: 45%;
+        position: relative;
+        width: 40%;
         height: 100%;
     }
     
-    section .content__inv .img img {
+    section .content__inv .img div {
+        position: absolute;
+        left: -10px;
         width: 100%;
         height: 100%;
+        transform: scale(1.2);
     }
     
     section .content__inv .invs {
-        width: 55%;
+        width: 60%;
         height: 100%;
         background-color: #092240;
         border-radius: 10px;
@@ -83,3 +88,19 @@
         padding-right: 15px;
     }
 </style>
+
+
+<script>
+    import Lottie from "lottie-web";
+
+    const container4 = document.getElementById('gift-4');
+    if (Lottie && container4) {
+        Lottie.loadAnimation({
+            container: container4,
+            renderer: 'svg',
+            loop: true,
+            autoplay: true,
+            path: '/public/assets/Inv/SpaceMan.json',
+        });
+    }
+</script>

@@ -6,13 +6,14 @@
 <section>
     <h3>Lugar</h3>
     <div class="place__text">
-        <img src="/assets/Place/5.png" alt="Planeta">
+        <div id="gift-2"></div>
         <a href="https://maps.app.goo.gl/YwkkTxqxsaiY8Dg7A" target="_blank">Virginia 125, Col. Nativitas, Benito Juárez</a>
     </div>
-
+    
     <h4>COMUNICADO DE ALTA IMPORTANCIA:</h4>
     <div class="place__communication">
         <img src="/assets/Place/6.png" alt="Comunicado">
+        <div id="gift-3"></div>
         <div class="content">
             <p>Después de la ceremonia,</p>
             <p>NO habrá recepción</p>
@@ -60,12 +61,12 @@
         z-index: 10;
     }
 
-    section .place__text img {
+    section .place__text div {
         position: absolute;
-        width: 140px;
-        top: 58%;
+        width: 150px;
+        top: 50%;
         left: -50px;
-        transform: translateY(-58%);
+        transform: translateY(-50%);
     }
 
     section .place__text a {
@@ -94,15 +95,24 @@
     }
 
     section .place__communication img {
-        width: 280px;
+        width: 200px;
+        margin-top: 15px;
+        padding-right: 25px;
+    }
+
+    section .place__communication #gift-3 {
+        position: absolute;
+        bottom: -60px;
+        right: 5px;
+        width: 180px;
     }
 
     section .place__communication .content {
         position: absolute;
-        top: 40px;
-        left: 47%;
-        transform: translateX(-47%);
-        width: 190px;
+        top: 20px;
+        left: 51%;
+        transform: translateX(-51%);
+        width: 180px;
         height: 150px;
         display: flex;
         flex-direction: column;
@@ -154,3 +164,30 @@
         z-index: 1;
     }
 </style>
+
+
+<script>
+    import Lottie from "lottie-web";
+
+    const container2 = document.getElementById('gift-2');
+    if (Lottie && container2) {
+        Lottie.loadAnimation({
+            container: container2,
+            renderer: 'svg',
+            loop: true,
+            autoplay: true,
+            path: '/assets/Place/Earth.json',
+        });
+    }
+
+    const container3 = document.getElementById('gift-3');
+    if (Lottie && container3) {
+        Lottie.loadAnimation({
+            container: container3,
+            renderer: 'svg',
+            loop: true,
+            autoplay: true,
+            path: '/assets/Place/Astronaut.json',
+        });
+    }
+</script>
