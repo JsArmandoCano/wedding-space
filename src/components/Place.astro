@@ -13,8 +13,8 @@
     <h4>COMUNICADO DE ALTA IMPORTANCIA:</h4>
     <div class="place__communication">
         <img src="/assets/Place/paper.png" alt="Papel">
-        <div id="gift-3"></div>
         <div class="content">
+            <div id="gift-3"></div>
             <p>Después de la ceremonia,</p>
             <p>NO habrá recepción</p>
         </div>
@@ -100,13 +100,6 @@
         padding-right: 25px;
     }
 
-    section .place__communication #gift-3 {
-        position: absolute;
-        bottom: -60px;
-        right: 5px;
-        width: 180px;
-    }
-
     section .place__communication .content {
         position: absolute;
         top: 20px;
@@ -119,6 +112,13 @@
         justify-content: center;
         align-items: center;
         gap: 5px;
+    }
+    
+    section .place__communication .content #gift-3 {
+        position: absolute;
+        bottom: -80px;
+        right: -95px;
+        width: 180px;
     }
 
     section .place__communication .content p {
@@ -162,6 +162,148 @@
         left: -40px;
         transform: rotate(-90deg);
         z-index: 1;
+    }
+
+    @media (min-width: 576px) {
+        section {
+            padding: 40px 0;
+        }
+
+        section h3 {
+            font-size: 40px;
+        }
+
+        section .place__text {
+            width: 50%;
+            height: 100px;
+        }
+
+        section .place__text div {
+            width: 200px;
+            left: -70px;
+        }
+
+        section .place__text a {
+            font-size: 24px;
+            padding-left: 100px;
+        }
+
+        section h4 {
+            width: 50%;
+            font-size: 28px;
+        }
+
+        section .place__communication {
+            margin-top: 0;
+        }
+
+        section .place__communication img {
+            width: 250px;
+        }
+
+        section .place__communication .content {
+            left: 50%;
+            transform: translateX(-50%);
+            width: 220px;
+            height: 190px;
+        }
+        
+        section .place__communication .content #gift-3 {
+            bottom: -100px;
+            right: -120px;
+            width: 220px;
+        }
+
+        section .place__communication .content p {
+            font-size: 25px;
+        }
+
+        section .nebu1 {
+            width: 300px;
+        }
+
+        section .nebu2 {
+            width: 300px;
+        }
+
+        section .star1 {
+            width: 320px;
+        }
+
+        section .star2 {
+            width: 320px;
+        }
+    }
+
+    @media (min-width: 1024px) {
+        section {
+            padding: 50px 0;
+        }
+
+        section h3 {
+            font-size: 60px;
+        }
+
+        section .place__text {
+            width: 40%;
+            height: 120px;
+        }
+
+        section .place__text div {
+            width: 240px;
+            left: -80px;
+        }
+
+        section .place__text a {
+            font-size: 30px;
+            padding-left: 120px;
+        }
+
+        section h4 {
+            width: 40%;
+            font-size: 38px;
+        }
+
+        section .place__communication img {
+            width: 320px;
+        }
+
+        section .place__communication .content {
+            width: 280px;
+            height: 250px;
+        }
+        
+        section .place__communication .content #gift-3 {
+            bottom: -110px;
+            right: -160px;
+            width: 280px;
+        }
+
+        section .place__communication .content p {
+            font-size: 34px;
+        }
+
+        section .nebu1 {
+            width: 500px;
+            top: -90px;
+            left: -140px;
+        }
+
+        section .nebu2 {
+            width: 500px;
+            bottom: -120px;
+            right: -180px;
+        }
+
+        section .star1 {
+            width: 450px;
+            right: -80px;
+        }
+        
+        section .star2 {
+            width: 450px;
+            left: -80px;
+        }
     }
 </style>
 
