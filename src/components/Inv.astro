@@ -10,13 +10,8 @@
         </div>
         <div class="invs">
             <h4>Tripulantes:</h4>
-            <div class="inv">
-                <p>Martha Cano</p>
-                <p>José Mejía</p>
-                <p>Alan Mejía</p>
-                <p>Ale Orta</p>
-            </div>
-            <h5>Total: 4</h5>
+            <div class="inv" id="inv-list"></div>
+            <h5 id="total"></h5>
         </div>
     </div>
 </section>
@@ -72,14 +67,10 @@
     section .content__inv .invs .inv {
         width: 100%;
         padding-left: 15px;
-    }
-    
-    section .content__inv .invs .inv p {
         font-size: 18px;
         color: #fff;
-        margin: 0;
     }
-    
+        
     section .content__inv .invs h5 {
         font-size: 18px;
         color: #fff;
@@ -97,7 +88,7 @@
             font-size: 36px;
         }
                 
-        section .content__inv .invs .inv p {
+        section .content__inv .invs .inv {
             font-size: 28px;
         }
         
@@ -107,6 +98,10 @@
     }
 
     @media (min-width: 1024px) {
+        section {
+            margin-bottom: 25px;
+        }
+
         section .content__inv .invs {
             padding: 15px 0;
         }
@@ -116,7 +111,7 @@
             padding-left: 30px;
         }
         
-        section .content__inv .invs .inv p {
+        section .content__inv .invs .inv {
             font-size: 34px;
             padding-left: 30px;
         }
@@ -128,12 +123,11 @@
     }
 </style>
 
-
 <script>
     import Lottie from "lottie-web";
 
     const container4 = document.getElementById('gift-4');
-    if (Lottie && container4) {
+    if (container4) {
         Lottie.loadAnimation({
             container: container4,
             renderer: 'svg',
@@ -141,5 +135,25 @@
             autoplay: true,
             path: '/assets/Inv/SpaceMan.json',
         });
+    }
+
+    import invData from "../data/invData.json";
+
+    const params = new URLSearchParams(window.location.search);
+    const name = params.get('name');
+    const jsonInv = invData.find(item => item.url === name);
+
+    const invList = document.getElementById('inv-list');
+    const totalEl = document.getElementById('total');
+
+    if (jsonInv && invList && totalEl) {
+        jsonInv.inv.forEach(invs => {
+            const p = document.createElement('p');
+            p.textContent = invs;
+            p.style.margin = '0';
+            invList.appendChild(p);
+        });
+
+        totalEl.textContent = `Total: ${jsonInv.inv.length}`;
     }
 </script>
