@@ -17,7 +17,7 @@
     { "url": "TiaMago", "total": "3", "inv": ["Mago", "David", "Caro"] },
     { "url": "LugoMeza2", "total": "5", "inv": ["Rosa", "Daniel", "Diana", "Kalel", "Greysi"] },
     { "url": "TiaMary", "total": "3", "inv": ["Tía Mary", "Montse", "Charly"] },
-    { "url": "PrimoManis", "total": "4", "inv": ["Manis", "Amira + 2"] },
+    { "url": "PrimoManis", "total": "4", "inv": ["Manis", "Amira", "+ 2"] },
     { "url": "AmigaPolly", "total": "2", "inv": ["Polly", "Rafa"] },
     { "url": "AmigaCayo", "total": "2", "inv": ["Cayo", "Chely"] },
     { "url": "AmigaMonts", "total": "2", "inv": ["Monts", "Magdiel"] },
@@ -45,6 +45,7 @@
     { "url": "HnaAlicia", "total": "2", "inv": ["Hna. Alicia", "Hno. Mario"] },
     { "url": "HnaJulia", "total": "3", "inv": ["Hna. Julia", "Isabela", "Galilea"] },
     { "url": "HnaSora", "total": "2", "inv": ["Hna. Sora", "Hno. Carlos"] },
+    { "url": "TiaJamiz", "total": "3", "inv": ["Tía Jamiz", "Tío Angel", "Gus Gus"] },
 
 
     { "url": "MendozaGalvez", "total": "2", "inv": ["Mauricio Mendoza", "Isabel Galvez"] },
