@@ -73,7 +73,6 @@
     { "url": "AndresBustamante", "total": "1", "inv": ["Andres Bustamante"] },
     { "url": "SugeyGarcia", "total": "2", "inv": ["Sugey Garcia", "Esposo"] },
     { "url": "KatyaRomero", "total": "2", "inv": ["Katya Romero", "Esposo"] },
-
     { "url": "NaimKaram", "total": "2", "inv": ["Naim Karam", "Acompañante"] },
     { "url": "AlfonsoGutierrez", "total": "2", "inv": ["Alfonso Gutierrez", "Acompañante"] },
     { "url": "AlanVergara", "total": "2", "inv": ["Alan Vergara", "Acompañante"] },
@@ -86,5 +85,7 @@
     { "url": "AngelSerrano", "total": "2", "inv": ["Angel Serrano", "Acompañante"] },
     { "url": "NancyLopez", "total": "2", "inv": ["Nancy Lopez", "Acompañante"] },
     { "url": "AlitzetRamirez", "total": "2", "inv": ["Alitzet Ramirez", "Acompañante"] },
-    { "url": "FranciscoGranciano", "total": "2", "inv": ["Francisco Granciano", "Acompañante"] }
+    { "url": "KatyaRomero", "total": "2", "inv": ["Katya Romero", "Acompañante"] },
+    { "url": "ManuelyYazie", "total": "2", "inv": ["Manuel Islas", "Yazie Luna"] },
+    { "url": "LuisAngel", "total": "1", "inv": ["Luis Angel"] }
 ]
